@@ -1,0 +1,84 @@
+:root{
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #ffc107;
+    --secundario: #0097a7;
+    --gris: #757575;
+}
+
+html{
+    font-size: 62.5%;
+}
+/*Con estos selectores {html}{body} vamos a simular que trabajamos en pixeles*/
+/*Pero esta vez los pixeles se adaptan mejora todo tipo de pantallas {Phone}{Tablets}{TV}*/
+body{
+    font-size: 16px; /*1 Rem = 10px*/
+    font-family: 'Krub', sans-serif;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 3.8rem;
+    
+}
+
+.titulo span {
+    font-size: 2rem;
+
+}
+
+.contenedor{
+    width: 120rem;
+    margin:0 auto;
+}
+
+.nav-bg{
+    background-color: var(--secundario);
+}
+
+
+/*haciendo la barra de navegacion resonsive*/
+.navegacion-principal {
+    
+    display: flex;/*se muestran de iz a der*/
+    flex-direction: column; /*se muestran de arriba abajo*/
+    justify-content: space-between;
+}
+
+/*llegado a cierto punto se muestran de arriba abajo*/
+
+@media (min-width: 768px) {
+    .navegacion-principal {
+        
+    }
+
+}
+
+
+.navegacion-principal a{
+   color: var(--blanco);
+   text-decoration: none;
+   font-size: 2rem;
+   font-weight: 700;
+   padding: 1rem;
+   
+
+}
+
+.navegacion-principal a:hover{
+    
+    background-color: var(--primario);
+    color: var(--oscuro);
+}
+
+@media (min-width: 480px) {
+    h1 {
+
+    }
+}
+
+@media (min-width: 768px) {
+    h1 {
+        
+    }
+}
